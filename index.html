@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Set an Appointment</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Time!</h1>
+      <div class="survey">
+        <form>
+          <div class="form-group">
+            <label for="fullName">Enter your full name:</label>
+            <input id="fullName" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="favDate">What is your favorite day?</label>
+            <input id="favDate" class="form-control" type="date">
+          </div>
+
+          <div class="form-group">
+            <label for="favColor">What is your favorite color?</label>
+            <input id="favColor" class="form-control" type="color">
+          </div>
+
+          <div class="form-group">
+            <label>Favorite Ice Cream</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="chocolate" checked>
+                Chocolate
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="vanilla">
+                Vanilla
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                Strawberry
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                Moose Tracks
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                Licorice
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Favorite Movie Genre</label>
+            <select class="form-control" id="favMovie">
+              <option>Action</option>
+              <option>Comedy</option>
+              <option>Drama</option>
+              <option>Documentary</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-danger btn-lg">Submit Answers</button>
+        </form>
+      </div>
+
+      <div class = "results">
+        <p>Thanks for taking our survey, <span class="fullName"></span>. Your favorite date is <span class="favDate"></span>, your favorite flavor of ice cream is <span class="flavor"></span>, and your favorite genre of movie is <span class="favMovie"></span>. We've changed the background to your favorite color. Hooray!</p>
+      </div>
+
+    </div>
+  </body>
+</html>
